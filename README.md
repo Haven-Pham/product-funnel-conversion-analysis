@@ -65,6 +65,14 @@ desktop sessions convert at 8–10%, mobile at about 3%.
    the mobile pilot campaign.
 5. **Test checkout changes site-wide**, because checkout performance does not depend on the product.
 
+## Deliverables
+
+| File | Description |
+|---|---|
+| [`notebooks/product_funnel_conversion.ipynb`](notebooks/product_funnel_conversion.ipynb) | Complete analysis with outputs |
+| [`reports/Product_Funnel_Results.xlsx`](reports/Product_Funnel_Results.xlsx) | Excel workbook: summary sheet with key findings, plus product performance, refund trend, funnel counts and rates, conversion by device and campaign |
+| [`reports/figures/`](reports/figures), [`reports/tables/`](reports/tables) | Charts (PNG) and result tables (CSV) |
+
 ## Repository Structure
 
 ```text
@@ -72,9 +80,10 @@ product-funnel-conversion-analysis/
 ├── data/                    order items, refunds, products, sessions and page views (gzip) with data dictionary
 ├── notebooks/               product_funnel_conversion.ipynb (analysis with outputs)
 ├── reports/
+│   ├── Product_Funnel_Results.xlsx  (Excel results workbook)
 │   ├── figures/             product performance, refund trend, funnel, landing signals
 │   └── tables/              product performance, funnel counts, conversion by segment (CSV)
-├── scripts/run_notebook.py  re-executes the notebook
+├── scripts/                 run_notebook.py, build_excel_report.py
 └── requirements.txt
 ```
 
@@ -82,7 +91,8 @@ product-funnel-conversion-analysis/
 
 ```bash
 pip install -r requirements.txt
-python scripts/run_notebook.py
+python scripts/run_notebook.py        # re-run the analysis, refresh figures and tables
+python scripts/build_excel_report.py  # rebuild the Excel workbook
 ```
 
 ## Data

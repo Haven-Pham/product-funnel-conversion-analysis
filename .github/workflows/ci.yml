@@ -16,3 +16,4 @@ jobs:
           cache: pip
       - run: pip install -r requirements.txt
       - run: python scripts/run_notebook.py
+      - run: python scripts/build_excel_report.py
