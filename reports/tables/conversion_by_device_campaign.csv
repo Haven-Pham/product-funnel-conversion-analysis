@@ -1,0 +1,9 @@
+device_type,utm_campaign,sessions,conversion_pct
+desktop,brand,26789,10.36619508007018
+desktop,none,51576,9.892197921513883
+desktop,nonbrand,242550,8.08946608946609
+desktop,desktop_targeted,5590,5.152057245080501
+mobile,none,31752,3.199798437893676
+mobile,nonbrand,95065,3.1757218745069165
+mobile,brand,14454,3.0095475300954755
+mobile,pilot,4573,0.8309643560026241
